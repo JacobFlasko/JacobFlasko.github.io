@@ -4,9 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <script defer src="script.js"></script>
+    <title>Jacob Flasko | Coming Soon</title>
   </head>
   <body>
-    <div class="w-64 h-64 bg-indigo-500"></div>
+    <section
+      class="h-screen w-full overflow-hidden absolute flex justify-center items-center"
+    >
+      <video
+        class="absolute w-full h-screen object-cover"
+        autoplay
+        muted
+        loop
+        src="./video/Background.mp4"
+      ></video>
+      <div
+        class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl absolute text-white text w-2/3 h-1/6 flex items-center justify-center bg-white/15 shadow-lg rounded-2xl"
+      >
+        Coming Soon
+      </div>
+
+        <button
+          id="muteButton"
+          class="absolute self-end mb-40 w-24 h-24 bg-white/15 shadow-2xl rounded-full flex items-center justify-center"
+        >
+          <img id="muteIcon" src="icons/Play.png" alt="Mute" />
+        </button>
+      </div>
+      <div class="absolute self-end text-white">
+        Designed and Developed by
+        <a href="#" class="hover:underline">Jacob Flasko</a>
+      </div>
+    </section>
   </body>
 </html>
