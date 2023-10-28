@@ -1,4 +1,4 @@
-const audio = new Audio("audio/honoluluMarch.mp3");
+const audio = new Audio("build/audio/honoluluMarch.mp3");
 const muteButton = document.getElementById("muteButton");
 const muteIcon = document.getElementById("muteIcon");
 let isMuted = true;
@@ -6,10 +6,10 @@ let isMuted = true;
 function toggleMute() {
   if (isMuted) {
     audio.muted = false;
-    muteIcon.src = "icons/Play.png";
+    muteIcon.src = "build/icons/Play.png";
   } else {
     audio.muted = true;
-    muteIcon.src = "icons/Mute.png";
+    muteIcon.src = "build/icons/Mute.png";
   }
   isMuted = !isMuted;
 }
